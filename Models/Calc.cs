@@ -53,7 +53,6 @@ namespace Exam_Revision.Models
             {
                 platforms.Add("Twitter");
             }
-
             if (highestFollowers == noPinterestFollowers)
             {
                 platforms.Add("Pinterest");
