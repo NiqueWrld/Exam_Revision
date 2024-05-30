@@ -1,0 +1,12 @@
+﻿@model Exam_Revision.Models.YouTubeModel
+@{
+    ViewBag.Title = "Result";
+}
+
+<h2>Result</h2>
+
+<p>Highest Followers: @ViewBag.HighestFollowers</p>
+<p>Total Credits: @ViewBag.TotalCredits</p>
+<p>Total Amount in Rands: @ViewBag.TotalAmount</p>
+
+<a href="@Url.Action("Index", "Home")">Back to Form</a>

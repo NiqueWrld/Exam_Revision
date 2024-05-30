@@ -1,0 +1,73 @@
+﻿@model Exam_Revision.Models.YouTubeModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h2>YouTube Form</h2>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <div>
+        <p>
+            <label>@Html.LabelFor(x => x.Name)</label>
+            @Html.EditorFor(x => x.Name)
+            <label style="color:red;"> @Html.ValidationMessageFor(x => x.Name)</label>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label>@Html.LabelFor(x => x.Surname)</label>
+            @Html.EditorFor(x => x.Surname)
+            <label style="color:red;"> @Html.ValidationMessageFor(x => x.Surname)</label>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label>@Html.LabelFor(x => x.celphoneNumber)</label>
+            @Html.EditorFor(x => x.celphoneNumber)
+            <label style="color:red;"> @Html.ValidationMessageFor(x => x.celphoneNumber)</label>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label>@Html.LabelFor(x => x.noFacebookFollowers)</label>
+            @Html.EditorFor(x => x.noFacebookFollowers)
+            <label style="color:red;"> @Html.ValidationMessageFor(x => x.noFacebookFollowers)</label>
+         </p>
+    </div>
+    <div>
+        <p>
+            <label>@Html.LabelFor(x => x.noInstagramFollowers)</label>
+            @Html.EditorFor(x => x.noInstagramFollowers)
+            <label style="color:red;"> @Html.ValidationMessageFor(x => x.noInstagramFollowers)</label>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label>@Html.LabelFor(x => x.noTwitterFollowers)</label>
+            @Html.EditorFor(x => x.noTwitterFollowers)
+            <label style="color:red;"> @Html.ValidationMessageFor(x => x.noTwitterFollowers)</label>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label>@Html.LabelFor(x => x.noPinterestFollowers)</label>
+            @Html.EditorFor(x => x.noPinterestFollowers)
+            <label style="color:red;"> @Html.ValidationMessageFor(x => x.noPinterestFollowers)</label>
+        </p>
+    </div>
+
+
+    <div>
+        <p>
+            <label>@Html.LabelFor(x => x.highestFollowers)</label>
+            @Html.DisplayFor(x => x.highestFollowers)
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <input type="submit" value="Submit"/>
+        </p>
+    </div>
+}
